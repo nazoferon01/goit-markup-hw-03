@@ -23,8 +23,29 @@ body {
     letter-spacing: 0.03em;
     color: var(--general-color);
 }
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /*common styles start*/
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid red;
+}
 .logo {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -32,7 +53,9 @@ body {
     line-height: 1.19;
     /* identical to box height */
 
-    color: var(--txt-color)
+    color: var(--txt-color);
+
+    margin-right: 93px;
 }
 
 .logo-color {
@@ -45,13 +68,33 @@ body {
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.header-link {
+.header-container,
+.header-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--txt-color)
+    color: var(--txt-color);
+}
+
+.header-list-item:not(:last-child){
+    margin-right: 50px;  
+}
+
+.header-list {
+    display: flex;
 }
 
 .header-link:hover,
@@ -69,7 +112,9 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--general-color)
+    color: var(--general-color);
+
+    margin-left: 50px;
 }
 
 .haeder-contact:hover,
@@ -91,6 +136,9 @@ body {
     color: var(--additional--color);
     border-radius: 4px;
     cursor: pointer;
+
+    margin-top: 30px;
+    margin-bottom: 200px;
 }
 
 .btn:hover,
@@ -99,6 +147,11 @@ body {
 }
 
 /*секція мейн*/
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .mainpage {
     background: var(--backgraund-color);
 }
