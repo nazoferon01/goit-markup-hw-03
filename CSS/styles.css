@@ -148,9 +148,7 @@ p {
 }
 
 .btn:hover,
-.btn:focus,
-.btn-filter.current:hover,
-.btn-filter.current:focus {
+.btn:focus {
     background-color: var(--backgraund--hover-color);
 }
 
@@ -335,6 +333,11 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.btn-filter.current:hover,
+.btn-filter.current:focus {
+    background-color: var(--backgraund--hover-color);
 }
 
 .btn-filter-about {
