@@ -30,11 +30,12 @@ p {
     margin: 0;
 }
 
-.img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
 /*common styles start*/
 .container {
     width: 1200px;
@@ -239,7 +240,7 @@ p {
     display: flex;
 }
 
-.ourworks-list-img {
+.ourworks-list-img:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -263,12 +264,13 @@ p {
 }
 
 .team-list-about {
-    margin-right: 30px;
-        
-
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--backgraund--general-color);
+}
+
+.team-list-about:not(:last-child) {
+    margin-right: 30px;
 }
 
 .team-title {
@@ -317,7 +319,6 @@ p {
 
 .footer-list {
     margin-top: 20px;
-    margin-bottom: 60px;
 }
 
 .footer-list-about {
@@ -335,9 +336,10 @@ p {
     align-items: center;
 }
 
-.btn-filter.current:hover,
+.btn-filter.current,
 .btn-filter.current:focus {
     background-color: var(--backgraund--hover-color);
+    color: var(--additional--color);
 }
 
 .btn-filter-about {
@@ -374,6 +376,7 @@ p {
 }
 
 /*portfolio - Секція портфоліо*/
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
